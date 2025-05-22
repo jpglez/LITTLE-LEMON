@@ -1,8 +1,9 @@
 function Main() {
   return (
     <main>
-      <h2>Welcome to Little Lemon!</h2>
-      <p>Enjoy fresh Mediterranean cuisine delivered to your doorstep.</p>
+      <h2>Little Lemon</h2>
+      <h3>Chicago</h3>
+      <p>We are a family owned Mediterranean restaurant focused on traditional recipes served with a modern twist.</p>
     </main>
   );
 }

@@ -1,0 +1,39 @@
+/* Aplica a todo el body */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estructura general de la app */
+header, nav, main, footer {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Flexbox para el nav */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Footer estilos */
+footer {
+  background-color: #f4f4f4;
+  font-size: 14px;
+}
+
+/* Logo tamaño */
+header img {
+  max-width: 200px;
+  height: auto;
+}
