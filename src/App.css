@@ -1,23 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Markazi+Text&display=swap');
 
-
-
 :root {
 
   --primary-green: #495E57;
-
   --primary-yellow: #F4CE14;
-
   --secondary-orange: #EE9972;
-
   --light-gray: #EDEFEE;
-
   --dark-gray: #333333;
-
-
-
   --font-title: 'Markazi Text', serif;
-
   --font-body: 'Karla', sans-serif;
 
 }
@@ -27,9 +17,7 @@
 * {
 
   margin: 0;
-
   padding: 0;
-
   box-sizing: border-box;
 
 }
@@ -39,82 +27,56 @@
 body {
 
   font-family: var(--font-body);
-
   background-color: var(--light-gray);
-
   color: var(--dark-gray);
-
   line-height: 1.6;
 
 }
-
 
 /* Header (logo) */
 
 header {
 
   padding: 0cm;
-
   background-color: white;
 
 }
 
-
 header img {
 
   height: 60px;
-
   margin-left: 3.9cm;
-
   margin-top: 1cm;
   
 }
-
-
 
 /* NavBar */
 
 nav {
 
   background-color: white;
-
   padding: 0px 20px;
-
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 
 }
 
-
-
 nav ul {
 
   list-style: none;
-
   display: flex;
-
   justify-content: center;
-
   gap: 30px;
-
   margin-left: 7cm;
 
-
 }
-
-
 
 nav li a {
 
   text-decoration: none;
-
   color: var(--dark-gray);
-
   font-weight: bold;
 
-
 }
-
-
 
 nav li a:hover {
 
@@ -122,31 +84,22 @@ nav li a:hover {
 
 }
 
-
 /* Main section */
 
 main {
 
   background-color: var(--primary-green);
-
   color: white;
-
   padding: 40px 20px;
-
   text-align: center;
 
 }
 
-
-
 main h2 {
 
   font-family: var(--font-title);
-
   color: var(--primary-yellow);
-
   font-size: 48px;
-
   margin-right: 20cm;
 
 }
@@ -154,51 +107,32 @@ main h2 {
 main h3 {
 
   font-family: var(--font-title);
-
   font-size: 38px;
-
   margin-top: -0.8cm;
-
   margin-right: 23cm;
-
   text-align: center;
 }
-
-
 
 main p {
 
   font-size: 14px;
-
   max-width: 230px;
-
   margin: 10px auto;
-
   margin-right: 23cm;
-
-text-align: left;
-
+  text-align: left;
 
 }
-
-
 
 /* Footer */
 
 footer {
 
   background-color: white;
-
   padding: 20px;
-
   text-align: center;
-
   font-size: 14px;
-
   color: var(--dark-gray);
-
   margin-top: 40px;
-
   border-top: 1px solid #ccc;
 
 }
