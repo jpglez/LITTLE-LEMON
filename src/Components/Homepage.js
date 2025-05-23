@@ -6,10 +6,10 @@ import Chicago from './Chicago';
 function Homepage() {
   return (
     <div>
+      <Chicago />
       <CallToAction />
       <Specials />
       <CustomersSay />
-      <Chicago />
     </div>
   );
 }
