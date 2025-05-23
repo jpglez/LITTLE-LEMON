@@ -1,9 +1,15 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Homepage from './Components/Homepage';
+import BookingPage from './Components/BookingPage';
+
 function Main() {
   return (
     <main>
-      <h2>Little Lemon</h2>
-      <h3>Chicago</h3>
-      <p>We are a family owned Mediterranean restaurant focused on traditional recipes served with a modern twist.</p>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/booking" element={<BookingPage />} />
+      </Routes>
     </main>
   );
 }
