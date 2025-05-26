@@ -158,7 +158,8 @@ button {
 
 .call-to-action {
   background-color: #fef6e4;  /* fondo muy claro */
-  color: #333;                /* texto oscuro */
+  color: #333;
+  font-weight: bold;                /* texto oscuro */
   padding: 3rem;
   text-align: center;
   border-radius: 10px;
@@ -191,12 +192,14 @@ button {
   border-radius: 10px;
   margin: 2rem auto;
   max-width: 90%;
+  font-weight: bold;
 }
 
 .customers-say h2 {
   color: #495e57; /* Tono más sobrio que negro puro */
   font-size: 2rem;
   margin-bottom: 1rem;
+  font-weight: bold;
 }
 
 .customers-say .stars {
@@ -217,4 +220,70 @@ button {
   margin: 2rem auto;
   max-width: 90%;
 }
+
+/* Center the entire page content */
+.booking-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #fafafa;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Center the section content */
+.booking-page section {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for headings and text */
+.booking-page h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.booking-page p {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Form styling */
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Input and select styles */
+form input,
+form select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Button styling */
+form button {
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #495e57;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #687c75;
+}
+
 
