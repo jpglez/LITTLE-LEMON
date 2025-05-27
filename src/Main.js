@@ -1,21 +1,42 @@
-import React, { useReducer } from 'react';
-import { Routes, Route } from 'react-router-dom';
+// src/Main.js
+/* global fetchAPI, submitAPI */
+import React, { useReducer, useEffect, useState } from 'react';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import Homepage from './Components/Homepage';
 import BookingPage from './Components/BookingPage';
+import ConfirmedBooking from './Components/ConfirmedBooking';
 
-// Función para inicializar las horas disponibles
-const initializeTimes = () => {
-  return ['17:00', '18:00', '19:00', '20:00', '21:00'];
-};
-
-// Función reductora para actualizar las horas (más adelante puedes personalizarla por fecha)
 const updateTimes = (state, action) => {
-  // action.date podría usarse para lógica basada en la fecha
-  return ['17:00', '18:00', '19:00', '20:00', '21:00'];
+  switch (action.type) {
+    case 'UPDATE_TIMES':
+      return action.times;
+    default:
+      return state;
+  }
 };
 
 function Main() {
-  const [availableTimes, dispatch] = useReducer(updateTimes, [], initializeTimes);
+  const [availableTimes, dispatch] = useReducer(updateTimes, []);
+  const [selectedDate, setSelectedDate] = useState(new Date());
+  const navigate = useNavigate(); // Add this
+
+  useEffect(() => {
+    const fetchTimes = async () => {
+      const times = await fetchAPI(selectedDate);
+      dispatch({ type: 'UPDATE_TIMES', times });
+    };
+    fetchTimes();
+  }, [selectedDate]);
+
+  // 🔥 Step 2: Submit form function
+  const submitForm = async (formData) => {
+    const success = await submitAPI(formData);
+    if (success) {
+      navigate('/confirmed');
+    } else {
+      alert("Something went wrong, please try again.");
+    }
+  };
 
   return (
     <main>
@@ -23,8 +44,15 @@ function Main() {
         <Route path="/" element={<Homepage />} />
         <Route
           path="/booking"
-          element={<BookingPage availableTimes={availableTimes} dispatch={dispatch} />}
+          element={
+            <BookingPage
+              availableTimes={availableTimes}
+              dispatchDateChange={setSelectedDate}
+              submitForm={submitForm} // 🔥 Pass to BookingPage
+            />
+          }
         />
+        <Route path="/confirmed" element={<ConfirmedBooking />} />
       </Routes>
     </main>
   );

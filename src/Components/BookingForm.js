@@ -1,20 +1,24 @@
 import React, { useState } from 'react';
 
-function BookingForm({ availableTimes, dispatch }) {
+function BookingForm({ availableTimes, onDateChange, submitForm }) {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
   const [guests, setGuests] = useState(1);
   const [occasion, setOccasion] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log({ date, time, guests, occasion });
+
+    const formData = { date, time, guests, occasion };
+    console.log('📤 Submitting form data:', formData);
+
+    submitForm(formData); // ✅ Call the function from props
   };
 
   const handleDateChange = (e) => {
     const newDate = e.target.value;
     setDate(newDate);
-    dispatch({ type: 'dateChange', date: newDate }); // Dispatch date change
+    onDateChange(new Date(newDate)); // Notify parent of new date
   };
 
   return (
