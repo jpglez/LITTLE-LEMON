@@ -1,4 +1,4 @@
-// src/Main.js
+// Main.js
 /* global fetchAPI, submitAPI */
 import React, { useReducer, useEffect, useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
@@ -18,7 +18,7 @@ const updateTimes = (state, action) => {
 function Main() {
   const [availableTimes, dispatch] = useReducer(updateTimes, []);
   const [selectedDate, setSelectedDate] = useState(new Date());
-  const navigate = useNavigate(); // Add this
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchTimes = async () => {
@@ -28,7 +28,6 @@ function Main() {
     fetchTimes();
   }, [selectedDate]);
 
-  // 🔥 Step 2: Submit form function
   const submitForm = async (formData) => {
     const success = await submitAPI(formData);
     if (success) {
@@ -48,7 +47,7 @@ function Main() {
             <BookingPage
               availableTimes={availableTimes}
               dispatchDateChange={setSelectedDate}
-              submitForm={submitForm} // 🔥 Pass to BookingPage
+              submitForm={submitForm}
             />
           }
         />

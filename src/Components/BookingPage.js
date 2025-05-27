@@ -1,3 +1,4 @@
+// Components/BookingPage.js
 import React from 'react';
 import BookingForm from './BookingForm.js';
 
@@ -10,7 +11,7 @@ function BookingPage({ availableTimes, dispatchDateChange, submitForm }) {
         <BookingForm
           availableTimes={availableTimes}
           onDateChange={dispatchDateChange}
-          submitForm={submitForm} // ✅ Pass the function here
+          submitForm={submitForm}
         />
       </section>
     </div>

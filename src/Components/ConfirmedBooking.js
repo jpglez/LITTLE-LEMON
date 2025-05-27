@@ -1,4 +1,4 @@
-// src/Components/ConfirmedBooking.js
+// Components/ConfirmedBooking.js
 import React from 'react';
 
 function ConfirmedBooking() {
