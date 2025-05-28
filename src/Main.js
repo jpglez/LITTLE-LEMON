@@ -61,6 +61,7 @@ function Main() {
           }
         />
         <Route path="/confirmed" element={<ConfirmedBooking />} />
+        <Route path="*" element={<Homepage/>}/>
       </Routes>
     </main>
   );
