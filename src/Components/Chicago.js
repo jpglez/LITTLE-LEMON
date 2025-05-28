@@ -1,5 +1,6 @@
 //import Homepage from './Homepage';
 import React from 'react';
+import homeImg from '../assets/images/home.jpg'
 function Chicago() {
   return (
     <div className="chicago">
@@ -9,7 +10,7 @@ function Chicago() {
       <p>
         We are a family owned Mediterranean restaurant focused on traditional recipes served with a modern twist.
       </p>
-      <img src= "/images/Mario and Adrian A.jpg" alt="Mario and Adrian" className='Chicago-image'/>
+      <img src={homeImg} alt="Home" className='Chicago-image'/>
     </main>
     </div>
   );

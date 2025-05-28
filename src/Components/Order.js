@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import bruschettaImg from '../assets/images/bruschetta.svg'
+import lemonImg from '../assets/images/lemon.jpg'
+import saladImg from '../assets/images/salad.jpg'
 
 const menuItems = [
-  { id: 1, name: "Bruschetta", price: 6.99, image: "/images/bruchetta.svg" },
-  { id: 2, name: "Greek Salad", price: 8.49, image: "/images/greek salad.jpg" },
-  { id: 3, name: "Lemon Dessert", price: 5.99, image: "/images/lemon.jpg" },
+  { id: 1, name: "Bruschetta", price: 6.99, image: bruschettaImg },
+  { id: 2, name: "Greek Salad", price: 8.49, image: saladImg },
+  { id: 3, name: "Lemon Dessert", price: 5.99, image: lemonImg },
 ];
 
 function OrderOnline() {
