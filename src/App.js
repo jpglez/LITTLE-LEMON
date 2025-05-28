@@ -5,7 +5,6 @@ import Footer from './Footer';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
 
-
 function App() {
   return (
     <BrowserRouter>
@@ -13,6 +12,7 @@ function App() {
     <Main />
     <Footer />
     </BrowserRouter>
+
   );
 }
 
