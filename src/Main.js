@@ -3,6 +3,10 @@
 import React, { useReducer, useEffect, useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Homepage from './Components/Homepage';
+import About from './Components/About'
+import Menu from './Components/Menu'
+import Order from './Components/Order'
+import Login from './Components/Login';
 import BookingPage from './Components/BookingPage';
 import ConfirmedBooking from './Components/ConfirmedBooking';
 
@@ -41,6 +45,10 @@ function Main() {
     <main>
       <Routes>
         <Route path="/" element={<Homepage />} />
+         <Route path="/about" element={<About />} />
+         <Route path="/menu" element={<Menu />} />
+         <Route path="/order" element={<Order />} />
+         <Route path="/login" element={<Login />} />
         <Route
           path="/booking"
           element={

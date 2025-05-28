@@ -52,7 +52,22 @@ header img {
   align-items: center;
   justify-content: space-around;
   padding: 1rem 2rem;
+  margin-right: 1cm;
   }
+
+.Chicago-image {
+  flex: 1;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 10cm;
+  align-items: center;
+  margin-top: -10cm;
+  margin-bottom: -0.4cm;
+}
+
 
 
 /* NavBar */
@@ -167,11 +182,21 @@ button {
   max-width: 90%;
 }
 
+.call-to-action p {
+  font-size: 14px;
+  max-width: 230px;
+  margin: 10px auto;
+  margin-right: 9.1cm;
+  text-align: center;
+  margin-bottom: 0.5cm;
+}
+
 .call-to-action button {
   background-color: #f4ce14;
   color: #333;
   font-weight: bold;
   padding: 0.8rem 1.6rem;
+  margin-left: 0.5cm;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -191,7 +216,7 @@ button {
   padding: 3rem 2rem;
   border-radius: 10px;
   margin: 2rem auto;
-  max-width: 90%;
+  max-width: 95%;
   font-weight: bold;
 }
 
@@ -200,11 +225,19 @@ button {
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: bold;
+  margin-right: 0.1cm;
 }
 
 .customers-say .stars {
   font-size: 1.5rem;
   color: #f4ce14;
+  margin-right: 5cm;
+  text-align: center;
+}
+
+.customers-say p {
+  font-size: 14px;
+  margin-right: 10.6cm;
 }
 
 
@@ -218,8 +251,30 @@ button {
   font-weight: bold;
   border-radius: 10px;
   margin: 2rem auto;
-  max-width: 90%;
+  max-width: 95%;
 }
+
+.about h3 {
+    margin-left: 0.9cm;
+}
+
+.about p {
+  margin-left: 3.6cm;
+}
+
+.About-image {
+  flex: 1;
+  max-width: 450px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-left: 10cm;
+  align-items: center;
+  margin-top: -10cm;
+  margin-bottom: 0.7cm;
+}
+
 
 /* Center the entire page content */
 .booking-page {
@@ -238,12 +293,14 @@ button {
   padding: 2rem 3rem;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
 }
 
 /* Style for headings and text */
 .booking-page h2 {
   text-align: center;
   margin-bottom: 1rem;
+  margin-right: -0.2cm;
 }
 
 .booking-page p {
@@ -251,6 +308,8 @@ button {
   margin-bottom: 1rem;
   color: #333;
   font-weight: bold;
+  margin-right: 0.3cm;
+  max-width: 95%;
 }
 
 /* Form styling */
@@ -286,4 +345,334 @@ form button:hover {
   background-color: #687c75;
 }
 
+.menu-page {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fffdf7;
+  color: #333;
+}
+
+.menu-page h1 {
+  text-align: center;
+  color: #495e57;
+  margin-bottom: 2rem;
+}
+
+.menu-section {
+  margin-bottom: 2rem;
+}
+
+.menu-section h2 {
+  color: var(--primary-yellow);
+  border-bottom: 2px solid #e3e3e3;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  margin-left: -0.5cm;
+}
+
+.menu-item {
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-left: 5rem;
+  margin-top: 1cm;
+  margin: 0 auto;
+ 
+}
+
+.menu-item h3 {
+  color: #222;
+  margin-bottom: 0.5rem;
+  margin-top: -4.1cm;
+}
+
+.menu-item p {
+  color: #555;
+  font-size: 1rem;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-left: 1.6cm;
+  margin-bottom: 2cm;
+ 
+  
+ 
+}
+
+.greek-salad h3 {
+  margin-top: -7cm;
+  margin-left: 3.2cm;
+  white-space: nowrap;;
+  
+}
+
+.lemon h3 {
+  margin-top: -6cm;
+  margin-left: 4cm;
+}
+
+.bruschetta h3 {
+  margin-top: -7cm;
+  margin-left: 3.5cm;
+}
+
+img.bruschetta {
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  border-radius: 10px;
+  margin-left: 8cm;
+  margin-top: -2cm;
+  margin-bottom: 2.5cm;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+img.salad {
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  border-radius: 10px;
+  margin-left: 8cm;
+  margin-top: -1.4cm;
+  margin-bottom: 2cm;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+img.lemon {
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  border-radius: 10px;
+  margin-left: 8cm;
+  margin-top: -1cm;
+  margin-bottom: 1cm;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Confirmed p {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin: 0;
+   max-width: 300px;
+   margin-left: 11.8cm;
+}
+
+.order-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: space-between;
+  margin-left: 6.5cm;
+}
+
+.menu-section {
+  flex: 2;
+}
+
+.menu-section h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5.8cm;
+  white-space: nowrap;
+}
+
+.menu-list {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.menu-card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  background-color: #fffefc;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.menu-card button {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  background-color: #f4ce14;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Contenedor general del carrito */
+.cart-section {
+  background-color: white;
+  color: #333;
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin-left: 3.3cm;
+}
+
+/* Título "Your Cart" */
+.cart-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Lista de productos del carrito */
+.cart-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.cart-section li {
+  margin: 0.8rem 0;
+  font-size: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1cm;
+  
+  
+}
+
+/* Contenedor del total y botón de checkout */
+.cart-summary {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+/* Texto "Total" */
+.cart-summary h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0cm;
+}
+
+.cart-section p {
+  white-space: nowrap;
+}
+/* Botón de Checkout */
+.cart-summary button {
+  background-color: #f4ce14;
+  color: #333;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.cart-summary button:hover {
+  background-color: #e1bc10;
+}
+
+
+
+.menu-card {
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.login-container {
+  background-color: #edefee;
+  padding: 3rem;
+  max-width: 400px;
+  margin: 3rem auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-container h2 {
+  color: #495e57;
+  margin-bottom: 2rem;
+  margin-left: 3cm;
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  white-space: nowrap;
+  text-align: center;
+  
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.login-form label {
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+}
+
+.login-form input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.password-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 2cm;
+}
+
+.toggle-btn {
+  background-color: transparent;
+  border: none;
+  color: #495e57;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  align-items: center;
+}
+
+.login-btn {
+  background-color: #f4ce14;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #e2bd12;
+}
 
