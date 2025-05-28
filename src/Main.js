@@ -1,15 +1,16 @@
 // Main.js
-/* global fetchAPI, submitAPI */
 import React, { useReducer, useEffect, useState } from 'react';
 import { Routes, Route, useNavigate } from 'react-router-dom';
 import Homepage from './Components/Homepage';
-import About from './Components/About'
-import Menu from './Components/Menu'
-import Order from './Components/Order'
+import About from './Components/About';
+import Menu from './Components/Menu';
+import Order from './Components/Order';
 import Login from './Components/Login';
 import BookingPage from './Components/BookingPage';
 import ConfirmedBooking from './Components/ConfirmedBooking';
+import { fetchAPI, submitAPI } from './api'; // ✅ IMPORT CORRECTO
 
+// Reducer para manejar los tiempos disponibles
 const updateTimes = (state, action) => {
   switch (action.type) {
     case 'UPDATE_TIMES':
@@ -37,7 +38,7 @@ function Main() {
     if (success) {
       navigate('/confirmed');
     } else {
-      alert("Something went wrong, please try again.");
+      alert('Something went wrong, please try again.');
     }
   };
 
@@ -45,10 +46,10 @@ function Main() {
     <main>
       <Routes>
         <Route path="/" element={<Homepage />} />
-         <Route path="/about" element={<About />} />
-         <Route path="/menu" element={<Menu />} />
-         <Route path="/order" element={<Order />} />
-         <Route path="/login" element={<Login />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/order" element={<Order />} />
+        <Route path="/login" element={<Login />} />
         <Route
           path="/booking"
           element={

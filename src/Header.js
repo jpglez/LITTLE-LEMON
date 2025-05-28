@@ -4,7 +4,7 @@ function Header() {
   return (
     <header>
     <div className="header-container">
-    <img src="/images/logo lemon.svg" alt="Little Lemon Logo" />
+    <img src="/images/logo-lemon.svg" alt="Little Lemon Logo" />
       <nav className="navbar">
       <ul className="nav-list">
         <li><Link to="/">Home</Link></li>
