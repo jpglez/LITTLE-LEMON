@@ -1,16 +1,53 @@
-# Little Lemon Restaurant Website
+# 🍋 Little Lemon Restaurant Website
 
-This is a responsive and interactive website for **Little Lemon**, a fictional Mediterranean restaurant.
-
-The project was built as part of the **Meta Front-End Developer** certification program. It's not an official website, but it's designed as if it were for a real business.
-
-# Features
-
-- Clean and modern restaurant landing page  
-- Menu sections with food descriptions  
-- Online table reservation form  
-- Fully responsive layout (mobile, tablet, desktop)  
-
-The goal of this project was to apply real-world front-end development skills including layout design, accessibility, forms, and responsive behavior.
+Welcome to **Little Lemon**, a fully responsive and interactive restaurant website inspired by a cozy Mediterranean bistro 🏺🌿  
+Built with passion and precision as part of the **Meta Front-End Developer** program.
 
 ---
+
+## ✨ Features
+
+✅ Clean and elegant restaurant landing page  
+🍽️ Interactive menu with delicious dish descriptions  
+📅 Online reservation form (fully functional layout)  
+🛒 Order Online section with cart interface  
+🔐 Modern login screen  
+📱 Fully responsive across **mobile, tablet, and desktop**  
+🎨 Consistent color palette, typography, and brand styling  
+
+---
+
+## ⚙️ Tech Stack
+
+- **React.js** ⚛️  
+- **CSS3 (custom design & responsive layout)** 🎨  
+- **React Router DOM** 🔗  
+- **Google Fonts (Markazi Text & Karla)** 🧩  
+- **GitHub Pages** for live deployment 🌍  
+
+---
+
+## 🚀 Live Demo
+
+👉 **Visit the project here:**  
+🔗 https://jpglez.github.io/LITTLE-LEMON/
+
+---
+
+## 💡 Purpose
+
+This project was developed to simulate a real business website and demonstrate core **front-end development** skills:  
+component structure, responsive design, accessibility, and user-friendly navigation.
+
+---
+
+## 👨‍💻 Author
+
+**Juan Pablo Gonzalez Design**  
+📍 Developer & Designer  
+🌐 https://jpglez.github.io/PORTFOLIO_JPGLEZ/  
+
+---
+
+⭐ *If you like this project, don't forget to leave a star on GitHub!* ⭐
+
